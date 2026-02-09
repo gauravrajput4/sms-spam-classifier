@@ -37,37 +37,48 @@ model = pickle.load(open("model.pkl", "rb"))
 st.markdown("""
 <style>
 .card {
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 15px;
+    padding: 22px;
+    border-radius: 14px;
+    margin-top: 20px;
+    font-size: 16px;
 }
+
+
 .ham {
-    background-color: #e6f4ea;
-    border-left: 6px solid #1a7f37;
+    background-color: #052e1c;      
+    color: #dcfce7;                 
+    border-left: 6px solid #22c55e;
 }
+
+/* SPAM CARD */
 .spam {
-    background-color: #fdecea;
-    border-left: 6px solid #d1242f;
+    background-color: #3f0a0a;    
+    color: #fee2e2;                
+    border-left: 6px solid #ef4444;
 }
+
+
 .title {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+    color: #e5e7eb;
 }
+
 .subtitle {
     text-align: center;
-    color: gray;
+    color: #9ca3af;
+    margin-bottom: 20px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Title
 st.markdown("<div class='title'>📩 Spam Message Detector</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Check whether a message is Spam or Ham</div>", unsafe_allow_html=True)
 
 st.write("")
 
-# Input box
+
 user_input = st.text_area(
     "✍️ Enter your message below",
     height=120,
