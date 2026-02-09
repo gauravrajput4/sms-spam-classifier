@@ -4,6 +4,9 @@ A **Machine Learning–based SMS Spam Detection web app** built with **Python, s
 The application classifies text messages as **Spam** or **Ham (Not Spam)** in real time and allows users to adjust **spam sensitivity using a threshold slider**.
 
 ---
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Scikit-Learn](https://img.shields.io/badge/Sklearn-Model-orange)
 
 ## 🚀 Live Demo
 🔗 **Streamlit App:**  
